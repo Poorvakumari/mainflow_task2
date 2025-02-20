@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section id="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Car World Logo">
+            <h2>Car World</h2>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#">Cars</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="new_cars.html">New Cars</a>
+                            <ul class="submenu">
+                                <li><a href="car1.html">Skoda Kylaq</a></li>
+                                <li><a href="car2.html">Toyota Fortuner</a></li>
+                                <li><a href="new_cars.html">View More</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Electric_cars.html">Electric Cars</a>
+                            <ul class="submenu">
+                                <li><a href="carev1.html">Mahindra XEV 9e</a></li>
+                                <li><a href="carev4.html">Hyundai Creta Electric</a></li>
+                                <li><a href="Electric_cars.html">View More</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="popular_brands.html">Popular Brands</a>
+                            <ul class="submenu">
+                                <li><a href="carp1.html">Mahindra Thar</a></li>
+                                <li><a href="carp5.html">Audi RS Q8 2025</a></li>
+                                <li><a href="popular_brands.html">View More</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+          <img src="images/carsp-3.jpeg" width="100%" id="MainImg" alt="Product image">
+      
+          <div class="small-img-group">
+            <div class="small-img-col">
+              <img src="images/carsp-3.jpeg" width="100%" class="small-img" alt="Product image">
+            </div>
+            <div class="small-img-col">
+              <img src="images/carsp3.1.jpg" width="100%" class="small-img" alt="Product image">
+            </div>
+            <div class="small-img-col">
+              <img src="images/carsp3.2.jpeg" width="100%" class="small-img" alt="Product image">
+            </div>
+            <div class="small-img-col">
+                <img src="images/carsp3.3.jpg" width="100%" class="small-img" alt="Product image">
+              </div>
+          </div>
+        </div>
+    
+        <div class="single-pro-details">
+            <h2>Popular Brand Car</h2>
+            <h4>Mahindra XUV700</h4>
+            <h2>Rs.13.99 - 25.74 Lakh</h2><br>
+            <span>The XUV700 is a flagship SUV in Mahindra’s lineup that offers commanding road presence, a spacious and feature-rich cabin. It comes with powerful petrol and diesel engine options, while the diesel automatic variant also gets an optional all-wheel-drive (AWD) drivetrain.</span>
+  </div>
+      </section>
+
+
+      <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+        smallimg[0].onclick = function() {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function() {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function() {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function() {
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <div class="logo">
+            <img src="images/logo.jpg" alt="Car World Logo">
+            <h2>Car World</h2>
+            <p>Your trusted destination for finding the perfect car.</p>
+        </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="listing.html">Cars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Car World. All rights reserved.</p>
+    </div>
+</footer>
