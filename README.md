@@ -36,4 +36,4 @@ This project includes a **fully functional dropdown navigation menu** created us
 
 
 ## View the live site  at  
-https://poorvakumari.github.io/Mainflow_tas1_carwebsite-landingpage-/
+https://poorvakumari.github.io/mainflow_task2/
